@@ -24,8 +24,8 @@ export default function Images() {
       <br />
       <img
         id="wd-ai-image"
-        src="https://www.nasa.gov/sites/default/files/earth_from_far.jpg"
-        alt="Earth viewed from space"
+        src="https://apod.nasa.gov/apod/image/earth_a17.gif"
+        alt="Earth photographed from Apollo 17"
         width="200px"
       />
 
