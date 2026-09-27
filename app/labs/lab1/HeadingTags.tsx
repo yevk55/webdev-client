@@ -21,6 +21,16 @@ export default function HeadingTags() {
       <h5>Heading 5</h5>
       <h6>Heading 6</h6>
 
+      <div id="wd-ai-headings">
+        <h4>Lab notes</h4>
+        <h5>What I built</h5>
+        <h6>Next step</h6>
+        This section demonstrates a second heading outline separate from the
+        one above. It shows how heading tags can be nested to organize
+        different levels of content within the same page. The notes below
+        summarize a small project and describe what comes next.
+      </div>
+
       <div id="wd-your-heading">
         <h4>Yevgeniy Karangel</h4>
         <span id="wd-your-span">My name is Yevgeniy. I live in Sacramento, California. </span>
