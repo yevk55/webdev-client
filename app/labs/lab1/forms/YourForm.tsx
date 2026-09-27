@@ -4,11 +4,11 @@ export default function YourForm() {
       <h4>Your Form</h4>
 
       <label htmlFor="wd-text-fields-firstname">First Name: </label>
-      <input placeholder="Jane" id="wd-text-fields-firstname" />
+      <input placeholder="Yevgeniy" id="wd-text-fields-firstname" />
       <br />
 
       <label htmlFor="wd-text-fields-lastname">Last Name: </label>
-      <input placeholder="Doe" id="wd-text-fields-lastname" />
+      <input placeholder="Karangel" id="wd-text-fields-lastname" />
       <br />
 
       <label htmlFor="wd-text-fields-password">Password: </label>
@@ -81,9 +81,6 @@ export default function YourForm() {
       <br />
       <select id="wd-select-major" defaultValue="COMPUTERSCIENCE">
         <option value="COMPUTERSCIENCE">Computer Science</option>
-        <option value="BUSINESS">Business Administration</option>
-        <option value="BIOLOGY">Biology</option>
-        <option value="PSYCHOLOGY">Psychology</option>
       </select>
 
       <br />
@@ -105,7 +102,7 @@ export default function YourForm() {
       <label htmlFor="wd-text-fields-email">Email: </label>
       <input
         type="email"
-        placeholder="jane@university.edu"
+        placeholder="karangel.y@northeastern.edu"
         id="wd-text-fields-email"
       />
       <br />
@@ -117,14 +114,6 @@ export default function YourForm() {
         min={2026}
         max={2032}
         id="wd-text-fields-graduation-year"
-      />
-      <br />
-
-      <label htmlFor="wd-date-enrolled">Enrollment Date: </label>
-      <input
-        type="date"
-        defaultValue="2026-09-01"
-        id="wd-date-enrolled"
       />
       <br />
 
