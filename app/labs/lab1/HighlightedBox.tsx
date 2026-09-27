@@ -79,6 +79,20 @@ export default function HighlightedBoxLab() {
         </ul>
       </HighlightedBox>
 
+      <HighlightedBox
+        backgroundColor="honeydew"
+        borderColor="seagreen"
+        borderWidth={2}
+        borderRadius={12}
+      >
+        <h4>Sample nested content</h4>
+        <ul>
+          <li>p</li>
+          <li>table</li>
+          <li>form</li>
+        </ul>
+      </HighlightedBox>
+
     </div>
   );
 }
