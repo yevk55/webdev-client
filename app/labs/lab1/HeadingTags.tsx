@@ -20,6 +20,12 @@ export default function HeadingTags() {
       <h4>Heading 4</h4>
       <h5>Heading 5</h5>
       <h6>Heading 6</h6>
+
+      <div id="wd-your-heading">
+        <h4>Yevgeniy Karangel</h4>
+        <span id="wd-your-span">My name is Yevgeniy. I live in Sacramento, California. </span>
+      </div>
+ 
     </div>
-  );
+ );
 }
