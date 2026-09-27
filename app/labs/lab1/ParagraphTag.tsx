@@ -13,15 +13,17 @@ export default function ParagraphTag() {
         This is the first paragraph. The paragraph tag is used to format
         vertical gaps between long pieces of text like this one.
       </p>
-      <p id="wd-p-3">
-        This is the second paragraph. Even though there is a deliberate white
-        gap between the paragraph above and this paragraph, by default
-        browsers render them as one contiguous piece of text as shown here on
-        the right.
+      <p id="wd-p-your-1">
+        I am from Sacramento, California. 
       </p>
-      <p id="wd-p-4">
-        This is the third paragraph. Wrap each paragraph with the paragraph
-        tag to tell browsers to render the gaps.
+      <p id="wd-p-your-2">
+        My goal in this course is to learn the foundations for building web applications. 
+      </p>
+      <p id="wd-ai-p">
+        Browsers apply default top and bottom margins to every &lt;p&gt; element,
+        so each paragraph pushes away from the ones around it. That built-in
+        margin is what creates the vertical gap, rather than any line breaks
+        or spaces typed in the source text.
       </p>
     </div>
   );
