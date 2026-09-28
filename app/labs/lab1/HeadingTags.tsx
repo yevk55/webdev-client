@@ -32,7 +32,7 @@ export default function HeadingTags() {
       </div>
 
       <div id="wd-your-heading">
-        <h4>Yevgeniy Karangel</h4>
+        <h4>Yevgeniy K</h4>
         <span id="wd-your-span">My name is Yevgeniy. I live in Sacramento, California. </span>
       </div>
  
