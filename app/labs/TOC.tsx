@@ -5,13 +5,13 @@ export default function TOC() {
     <div id="wd-toc">
       <ul>
         <li>
-          <Link href="/labs">Home</Link>
+          <Link href="/labs" id="wd-home-link">Home</Link>
         </li>
         <li>
-          <Link href="/labs/lab1">Lab 1</Link>
+          <Link href="/labs/lab1" id="wd-lab1-link">Lab 1</Link>
         </li>
         <li>
-          <Link href="/labs/lab2">Lab 2</Link>
+          <Link href="/labs/lab2" id="wd-lab2-link">Lab 2</Link>
         </li>
         <li>
           <Link href="/labs/lab3">Lab 3</Link>
@@ -21,6 +21,9 @@ export default function TOC() {
         </li>
         <li>
           <Link href="/labs/lab5">Lab 5</Link>
+        </li>
+        <li>
+          <Link href="/book/ch1" id="wd-toc-book-link">Chapter 1</Link>
         </li>
       </ul>
     </div>
