@@ -25,7 +25,12 @@ export default function TOC() {
         <li>
           <Link href="/book/ch1" id="wd-toc-book-link">Chapter 1</Link>
         </li>
-      </ul>
+        <li>
+            <Link href="/" id="wd-kambaz-link">
+            Kambaz
+            </Link>
+        </li>
+    </ul>
     </div>
   );
 }
