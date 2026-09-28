@@ -8,7 +8,7 @@ export default function YourForm() {
       <br />
 
       <label htmlFor="wd-text-fields-lastname">Last Name: </label>
-      <input placeholder="Karangel" id="wd-text-fields-lastname" />
+      <input placeholder="K" id="wd-text-fields-lastname" />
       <br />
 
       <label htmlFor="wd-text-fields-password">Password: </label>
@@ -102,7 +102,7 @@ export default function YourForm() {
       <label htmlFor="wd-text-fields-email">Email: </label>
       <input
         type="email"
-        placeholder="karangel.y@northeastern.edu"
+        placeholder="jdoe@northeastern.edu"
         id="wd-text-fields-email"
       />
       <br />
