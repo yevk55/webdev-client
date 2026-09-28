@@ -1,5 +1,55 @@
-export default function Assignments() {
+import AssignmentItem from "./AssignmentItem";
+
+export default async function Assignments({
+  params,
+}: {
+  params: Promise<{ cid: string }>;
+}) {
+  const { cid } = await params;
   return (
-    <h4>Assignments</h4>
+    <div id="wd-assignments">
+        {/* search input, + Group, + Assignment */}
+        <input 
+        type="search" 
+        placeholder="Search for Assignments"
+        id="wd-search-assignment"
+        />
+
+        <button id="wd-add-assignment-group" type="submit">
+            + Group
+        </button>
+        <button id="wd-add-assignment" type="submit">
+            + Assignment
+        </button>
+
+      {/* h3 wd-assignments-title */}
+      <h3 
+        id="wd-assignments-title">ASSIGNMENTS 40% of Total <button type="submit">+</button>
+      </h3> 
+      <ul id="wd-assignment-list">
+        <AssignmentItem
+            cid={cid}
+            aid={"123"}
+            title="A1 - ENV + HTML"
+            details="Multiple Modules | Not available until May 6 at 12:00am |
+                    Due May 13 at 11:59pm | 100 pts"
+        />
+        <AssignmentItem
+            cid={cid}
+            aid="234"
+            title="A2 - CSS + TAILWIND"
+            details="Multiple Modules | Not available until May 13 at 12:00am |
+                    Due May 20 at 11:59pm | 100 pts"
+        />
+        <AssignmentItem
+            cid={cid}
+            aid="456"
+            title="A3 - JAVASCRIPT + REACT"
+            details="Multiple Modules | Not available until May 20 at 12:00am |
+                    Due May 27 at 11:59pm | 100 pts"
+        />
+        {/* at least three AssignmentItems using cid */}
+      </ul>
+    </div>
   );
 }
