@@ -17,13 +17,16 @@ export default function Signin() {
         defaultValue="123"
       />{" "}
       <br />
-      <Link href="/account/profile" id="wd-signin-btn">
-        Sign in
-      </Link>{" "}
-      <br />
-      <Link href="/account/signup" id="wd-signup-link">
-        Sign up
-      </Link>
+        <Link href="/account/profile" id="wd-signin-btn">
+            Sign in
+        </Link>{" "}
+        <br />
+        <Link href="/account/signup" id="wd-signup-link">
+            Sign up
+        </Link>
+        <Link href="/dashboard" id="wd-signin-btn">
+            Sign in
+        </Link>
     </div>
   );
 }
