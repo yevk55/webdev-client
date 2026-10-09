@@ -17,6 +17,27 @@ export default function Lab2() {
       <p>
         This is the second paragraph.
       </p>
+    
+    <div id="wd-css-id-selectors">
+      <h3>ID selectors</h3>
+      <p id="wd-id-selector-1">
+        Instead of changing the look and feel of all the
+        elements of the same name, e.g., P, we can refer to a
+        specific element by its ID
+      </p>
+      <p id="wd-id-selector-2">
+        Here&apos;s another paragraph using a different ID and a
+        different look and feel
+      </p>
+      <p id="wd-ai-id-selector">
+        This paragraph uses its own ID, so it gets its own purple
+        background and white text without affecting the other IDs.
+      </p>
+      <p id="wd-id-selector-3">
+        This is my own paragraph.
+      </p>
+    </div>
+
     </div>
   );
 }
