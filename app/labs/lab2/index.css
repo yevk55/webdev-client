@@ -21,3 +21,18 @@ p#wd-id-selector-3 {
     background-color: lightblue;
     color: black;
 }
+
+.wd-class-selector {
+  background-color: yellow;
+  color: blue;
+}
+
+.wd-ai-class-selector {
+  background-color: teal;
+  color: white;
+}
+
+.wd-your-class {
+    background-color: lightgreen;
+    color: black;
+}

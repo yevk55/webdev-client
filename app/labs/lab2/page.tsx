@@ -38,6 +38,30 @@ export default function Lab2() {
       </p>
     </div>
 
+    <div id="wd-css-class-selectors">
+      <h3>Class selectors</h3>
+      <p className="wd-class-selector">
+        Instead of using IDs to refer to elements, you can use an
+        element&apos;s CLASS attribute
+      </p>
+      <h4 className="wd-class-selector">
+        This heading has same style as paragraph above
+      </h4>
+      <p className="wd-ai-class-selector">
+        This paragraph uses its own class, so it gets a teal background
+        and white text.
+      </p>
+      <h4 className="wd-ai-class-selector">
+        This heading shares the same class, and the same style, as the
+        paragraph above
+      </h4>
+    </div>
+      <p className="wd-your-class">
+        This is my styled class.
+      </p>
+      <h4 className="wd-your-class">
+        This heading has same style as paragraph above.
+      </h4>
     </div>
   );
 }
