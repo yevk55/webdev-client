@@ -70,7 +70,7 @@ export default function HighlightedBoxLab() {
         borderRadius={15}
       >
         <p>
-          Yevgeniy Karangel
+          Yevgeniy K
         </p>
         <ul>
             <li>Understand Web Dev Fundamentals</li>
