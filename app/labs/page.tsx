@@ -20,6 +20,9 @@ export default function Labs() {
         <li>
           <Link href="/labs/lab5">Lab 5</Link>
         </li>
+        <li>
+          <Link href="https://github.com/yevk55/webdev-client">Github</Link>
+        </li>
       </ul>
     </div>
   );
