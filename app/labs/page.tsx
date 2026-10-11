@@ -23,6 +23,9 @@ export default function Labs() {
         <li>
           <Link href="https://github.com/yevk55/webdev-client">Yevgeniy Karangel</Link>
         </li>
+        <p>
+          <a href="/labs/lab2/tailwind">Open Tailwind CSS lab →</a>
+        </p>
       </ul>
     </div>
   );
