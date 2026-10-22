@@ -1,5 +1,10 @@
+import VariablesAndConstants from "./VariablesAndConstants";
+
 export default function Lab3() {
   return (
-    <h4>Lab 3</h4>
+    <div id="wd-lab3">
+      <h2>Lab 3</h2>
+      <VariablesAndConstants />
+    </div>
   );
 }
