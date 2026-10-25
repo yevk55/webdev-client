@@ -32,6 +32,11 @@ import Styles from "./Styles";
 import ClientComponentDemo from "./ClientComponentDemo";
 import ServerComponentDemo from "./ServerComponentDemo";
 import Add from "./Add";
+import Square from "./Square";
+import Highlight from "./Highlight";
+import PathParameters from "./PathParameters";
+import TodoList from "./todos/TodoList";
+
 
 export default function Lab3() {
   console.log("Hello World!");
@@ -74,6 +79,20 @@ export default function Lab3() {
       <Add a={3} b={4} />
       <Add a={10} b={20} />
       <Add a={7} b={8} />
+      <h4>Square of 4</h4>
+      <Square>4</Square>
+      <p>Square of 5 = <Square>5</Square></p>
+      <Square>9</Square>
+      <hr />
+      <Highlight>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      </Highlight>
+      <Highlight>
+        Hello there.
+      </Highlight>
+      <Highlight>Children can be any JSX</Highlight>
+      <PathParameters />
+      <TodoList />
     </div>
   );
 }
