@@ -9,7 +9,7 @@ export default function KambazLayout({
   return (
   <div className="flex">
     <KambazNavigation />
-    <div className="flex-1">{children}</div>
+    <div className="flex-1 md:ml-[130px]">{children}</div>
   </div>
   );
 }
