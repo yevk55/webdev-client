@@ -1,7 +1,15 @@
+"use client";
+
+import { useParams } from "next/navigation";
 import Lesson from "./Lesson";
 import Module from "./Module";
+import * as db from "../../../database";
+
 
 export default function Modules() {
+  const { cid } = useParams();
+  const modules = db.modules.filter((module) => module.course === cid);
+
   return (
     <div>
       <div className="mb-3 flex flex-wrap items-center gap-2">
@@ -22,6 +30,7 @@ export default function Modules() {
           className="rounded border border-neutral-300 bg-white px-3 py-1.5 text-sm"
         >
           <option value="publish-all">Publish All</option>
+          <option value="unpublish-all">Unpublish All</option>
         </select>
         <button
           type="button"
@@ -30,42 +39,17 @@ export default function Modules() {
           + Module
         </button>
       </div>
-      <ul id="wd-modules" className="m-0 list-none p-0">
-        <Module title="Week 1, Lecture 1 - Course Introduction, Syllabus, Agenda">
-          <Lesson title="LEARNING OBJECTIVES">
-            <li className="wd-content-item">Introduction to the course</li>
-            <li className="wd-content-item">Learn what is Web Development</li>
-          </Lesson>
-          <Lesson title="READING">
-            <li className="wd-content-item">
-              Full Stack Developer - Chapter 1 - Introduction
-            </li>
-          </Lesson>
-          {/* ...keep the rest of your Chapter 1 lessons (SLIDES, ...) */}
-        </Module>
-        {/* ...keep your other Chapter 1 modules (Week 2, ...) */}
-      </ul>
 
       <ul id="wd-modules" className="m-0 list-none p-0">
-        <Module title="Week 2, Lecture 2">
-          <Lesson title="LEARNING OBJECTIVES">
-            <li className="wd-content-item">Watch first lecture</li>
-            <li className="wd-content-item">Complete first homework assignment</li>
-          </Lesson>
-          <Lesson title="READING">
-            <li className="wd-content-item">
-              Full Stack Developer - Chapter 2 - HTML
-            </li>
-          </Lesson>
-        </Module>
-
-        <Module title="Sample module (AI)">
-          <Lesson title="Sample lesson (AI)">
-            <li className="wd-content-item">Sample content item</li>
-          </Lesson>
-        </Module>
+        {modules.map((module) => (
+          <Module key={module._id} title={module.name}>
+            {module.lessons?.map((lesson) => (
+              <Lesson key={lesson._id} title={lesson.name} />
+            ))}
+          </Module>
+        ))}
       </ul>
-
+     
     </div>
   );
 }
