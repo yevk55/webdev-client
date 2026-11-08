@@ -86,7 +86,7 @@ export default function UrlEncoding() {
         className="mb-2 block w-full rounded bg-blue-600 px-3 py-1.5 text-center text-sm font-medium text-white no-underline"
         id="wd-url-path-link"
       >
-        {a} + {b} + {c} → Query Params (programmatic)
+        {a} + {b} → Query Params (programmatic)
       </Link>
       <hr />
     </div>
