@@ -82,7 +82,7 @@ export default function UrlEncoding() {
         {a} + {b} + {c} → Query Params (programmatic)
       </Link>
       <Link
-        href={`${baseUrl}/path-params/${encodeURIComponent(a)}&b=${encodeURIComponent(b)}&c=${encodeURIComponent(c)}`}
+        href={`${baseUrl}/path-params/${encodeURIComponent(a)}&b=${encodeURIComponent(b)}`}
         className="mb-2 block w-full rounded bg-blue-600 px-3 py-1.5 text-center text-sm font-medium text-white no-underline"
         id="wd-url-path-link"
       >
