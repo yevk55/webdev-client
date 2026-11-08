@@ -5,8 +5,7 @@ import { TodosContext, useTodosContext } from "./todosContext";
 
 function TodosProvider({ children }: { children: ReactNode }) {
   const [todos, setTodos] = useState([
-    { id: "1", title: "Learn React" },
-    { id: "2", title: "Learn Context" },
+    { id: "1", title: "Watch lecture" }
   ]);
   const addItem = (title: string) => {
     setTodos([...todos, { id: Math.floor(Math.random() * 100).toString(), title }]);
