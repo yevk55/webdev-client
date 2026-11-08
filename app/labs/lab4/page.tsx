@@ -2,6 +2,7 @@
 import ClickEvent from "./ClickEvent";
 import PassingDataOnEvent from "./PassingDataOnEvent";
 import PassingFunctions from "./PassingFunctions";
+import Counter from "./Counter";
 
 export default function Lab4() {
   const sayHello = (message: string) =>
@@ -22,6 +23,7 @@ export default function Lab4() {
       <ClickEvent />
       <PassingDataOnEvent />
       <PassingFunctions theFunction={sayHello} message="Hello from Lab 4" theSecondFunction={sayMyName} theOtherFunction={sampleFromParent}/>
+      <Counter />
     </div>
   );
 }
