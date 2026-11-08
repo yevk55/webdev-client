@@ -24,6 +24,9 @@ export default function Lab4() {
       <PassingDataOnEvent />
       <PassingFunctions theFunction={sayHello} message="Hello from Lab 4" theSecondFunction={sayMyName} theOtherFunction={sampleFromParent}/>
       <Counter />
+      <Counter />
+      <Counter />
+      <Counter />
     </div>
   );
 }
