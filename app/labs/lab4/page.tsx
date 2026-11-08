@@ -1,5 +1,27 @@
+"use client";
+import ClickEvent from "./ClickEvent";
+import PassingDataOnEvent from "./PassingDataOnEvent";
+import PassingFunctions from "./PassingFunctions";
+
 export default function Lab4() {
+  const sayHello = (message: string) =>
+  {
+    alert(message);
+  }
+  const sayMyName = () =>
+  {
+    alert("Yevgeniy");
+  }
+  const sampleFromParent = () =>
+  {
+    alert("Sample from parent");
+  }
   return (
-    <h4>Lab 4</h4>
+    <div id="wd-lab4">
+      <h2>Lab 4</h2>
+      <ClickEvent />
+      <PassingDataOnEvent />
+      <PassingFunctions theFunction={sayHello} message="Hello from Lab 4" theSecondFunction={sayMyName} theOtherFunction={sampleFromParent}/>
+    </div>
   );
 }
