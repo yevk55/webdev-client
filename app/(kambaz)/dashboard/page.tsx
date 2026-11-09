@@ -15,6 +15,7 @@ export default function Dashboard() {
   const addCourse = useCoursesStore((state) => state.addCourse);
   const updateCourse = useCoursesStore((state) => state.updateCourse);
   const [course, setCourse] = useState<Course>(emptyCourse);
+  const { currentUser } = useAccountContext();
   const visibleCourses = currentUser
     ? courses.filter((c) =>
       db.enrollments.some(
